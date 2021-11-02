@@ -1,0 +1,219 @@
+/*
+*    Theme Name: Rocket Plus Theme - Child
+*    Theme URI: http://www.primeview.com
+*    Github Theme URI: https://github.com/primeviewdev/rocket-theme
+*    Author: PrimeView
+*    Template: rocket-theme-plus
+*    Description: Child Theme
+*    Version: v1.0.0
+ */
+ 
+ :root{
+    /*  */
+    /* Max-width */
+    --max-container-width: ;/* Declare */
+
+    /* Header Heights */
+    --top-header-height: ; /* Declare */
+    --main-header-height: ; /* Declare */
+
+    /* Sections */
+    --hp-section-padding: ; /* Declare */
+
+    /* Colors */
+    --primary-color: ; /* Declare */
+    --secondary-color: ; /* Declare */
+    --link-color: ; /* Declare */
+    --link-hover-color: ; /* Declare */
+    
+    /* Fonts */
+    --base-font-family: ; /* Declare */
+    --base-font-size: 18px;  /* Declare */
+    --heading-color: var(--primary-color);
+    --h1-font-size: 40px; /* Declare */
+    --h2-font-size: calc(var(--h1-font-size)-8px);
+    --h3-font-size: calc(var(--h1-font-size)-12px);
+    --h4-font-size: calc(var(--h1-font-size)-16px);
+
+    /* Buttons */
+    --btn-font-size: 26px;
+    --btn-primary-bg-color: var(--primary-color);
+    --btn-primary-font-color: var(--secondary-color);
+    --btn-primary-hover-bg: ;
+    --btn-primary-hover-font: ;
+    --btn-primary-padding: 15px 50px; /* Declare */
+    --btn-primary-bd-radius: 25px;
+    --btn-primary-hover-bd-radius: ;
+    --btn-primary-font-size: var(--btn-font-size); /* Declare */
+
+}
+body {
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
+    line-height: 1.5;
+}
+#page .container {
+    max-width: var(--max-container-width);
+}
+h1,h2,h3,h4,h5 {
+    color: var(--primary-color);    
+    margin-bottom: 20px;
+}
+a {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--link-hover-color);
+}
+.mobile-img {
+    display: none;
+}
+img, iframe {
+    max-width: 100%;
+}
+.entry-content {
+    margin-bottom: 60px;
+}
+
+/* Buttons */
+.btn.btn-primary {
+    background-color: var(--btn-primary-bg-color);
+    color: var(--btn-primary-font-color);
+    border-radius: var(--btn-primary-bd-radius);
+    box-shadow: 0px 2px 1px 0px var(--btn-primary-font-color);
+    padding: var(--btn-primary-padding);
+    border-color: transparent;
+    font-weight: normal;
+    font-size: var(--btn-primary-font-size);
+    transition: all 0.1s ease-in;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+    border-radius: var(--btn-primary-hover-bd-radius)!important;
+    border-color: var(--btn-primary-bg-color)!important;
+    box-shadow: 0px 2px 1px 0px var(--btn-primary-bg-color)!important;
+    background-color: var(--primary-color)!important;
+    color: #fff;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.container{
+    max-width: var(--max-container-width);
+}
+h1{ font-size: var(--h1-font-size); }
+h2{ font-size: var(--h2-font-size); }
+h3{ font-size: var(--h3-font-size); }
+h4{ font-size: var(--h4-font-size); }
+h5{ font-size: var(--h5-font-size); }
+
+.social-media {
+	list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.social-media li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.social-media a {
+    font-size: 25px;
+}
+.mobile{
+    display: none;
+}
+html.js-focus-visible {
+    margin-top: 0px!important;
+}
+/* Header */
+/* Fixed Styles */
+.site-header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+}
+div#primary {
+    margin-top: calc( var(--top-header-height) + var(--main-header-height));
+}
+/* Mobile Menu */
+.rocket-mobile-button {
+    display: none;
+}
+div#rocket-mobile-menu {
+    overflow-y: scroll;
+}
+/* Top Header */
+.top-header {
+    padding: 18px 0px 15px;
+    font-size: 12px;
+    min-height: var(--top-header-height);
+}
+.top-header i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+.top-header .right-content a {
+    color: #000;
+    margin-left: 15px;
+}
+.main-header .row {
+    min-height: var(--main-header-height);
+}
+
+/* CF7 CSS */
+.contact-us-form label {
+    display: none;
+}
+.contact-us-form .wpcf7-form-control-wrap input[type=text], 
+.contact-us-form .wpcf7-form-control-wrap input[type=email], 
+.contact-us-form .wpcf7-form-control-wrap input[type=tel],
+.contact-us-form .wpcf7-form-control-wrap textarea {
+    padding: var(--default-input-padding);
+    border-radius: 10px;
+    background-color: #fff;
+    max-width: 100%;
+}
+.contact-us-form .wpcf7-form label,
+.contact-us-form .wpcf7-form-control-wrap,
+.contact-us-form .wpcf7-form-control-wrap input[type=text], 
+.contact-us-form .wpcf7-form-control-wrap input[type=email],
+.contact-us-form .wpcf7-form-control-wrap input[type=tel], 
+.contact-us-form .wpcf7-form-control-wrap textarea {
+    width: 100%;
+}
+.contact-us-form .btn__default {
+    width: 100%;
+    font-weight: bold;
+    padding: 16px 0px;
+    font-size: calc(var(--default-btn-size) - 4px );
+    margin-top: 20px;
+}
+.wpcf7 form .wpcf7-response-output {
+    color: #fff;
+    padding: 10px 10px;
+    font-size: calc( var(--default-font-size) - 1px ) ;
+}
+
+/* Innerpage */
+.innerpage .main_content {
+    min-height: 45vh;
+}
+.innerpage header.innerpage-header {
+    margin-bottom: 40px;
+}
+.innerpage a {
+    color: var(--primary-color);
+}
+
+/* 404 Page */
+.error404 div#primary{
+    min-height: 55vh;
+}
