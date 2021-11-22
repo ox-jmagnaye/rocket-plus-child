@@ -7,7 +7,7 @@
 						</div>
 					</div>
 				</div>
-				<!--div class="site_copyright">
+				<div class="site_copyright">
 					<div class="container">
 						<div class="row">
 							<?php
@@ -15,7 +15,7 @@
 							?>
 						</div>
 					</div>
-				</div-->
+				</div>
 			</footer>
 			<?php if(get_option('scroll-to-top')):?>
 			<div id="scroll-to-top" title="Scroll to top"><i class="fa fa-arrow-up"></i></div>

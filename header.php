@@ -9,6 +9,9 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+<!-- After Opening Head Scripts -->	
+<?php echo get_option('after_opening_head_scripts');?>
+<!-- After Opening Head Scripts End -->
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title><?php wp_title('|','true','right'); ?></title>
@@ -54,11 +57,20 @@
 		<!-- Rocket Mobile Menu End -->
 	<?php endif; ?>
 	
-	<div id="page" class="hfeed ">
-		<?php echo do_shortcode('[rocket-mobile-button]'); ?>
-		<div class="site-header fixed">
-			<?php
-				get_template_part('includes/template-parts/headers/content','header-'. $headerTemplate);
-			?>
-			
+	<div id="page" class="hfeed <?php if(get_option('header-fixed')) { echo 'fixed-header'; } ?>">
+		<div class="site-header ">
+			<div class="top-header">
+				<div class="container">
+					<div class="row align-items-center">
+						<?php dynamic_sidebar( 'top-header-widget' )?>
+					</div>
+				</div>
+			</div>
+			<div class="main-header">
+				<div class="container">
+					<div class="row align-items-center">
+						<?php dynamic_sidebar( 'header-widget' )?>
+					</div>
+				</div>
+			</div>
 		</div>
