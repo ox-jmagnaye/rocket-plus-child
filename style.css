@@ -5,7 +5,7 @@
 *    Author: PrimeView
 *    Template: rocket-plus
 *    Description: Child Theme
-*    Version: v1.0.0
+*    Version: v1.0.1
  */
  
  :root{
@@ -31,9 +31,9 @@
     --base-font-size: 18px;  /* Declare */
     --heading-color: var(--primary-color);
     --h1-font-size: 40px; /* Declare */
-    --h2-font-size: calc(var(--h1-font-size)-8px);
-    --h3-font-size: calc(var(--h1-font-size)-12px);
-    --h4-font-size: calc(var(--h1-font-size)-16px);
+    --h2-font-size: calc( var(--h1-font-size) -8px );
+    --h3-font-size: calc( var(--h1-font-size) -12px );
+    --h4-font-size: calc( var(--h1-font-size) -16px );
 
     /* Buttons */
     --btn-font-size: 26px;
@@ -193,7 +193,7 @@ div#rocket-mobile-menu {
     width: 100%;
     font-weight: bold;
     padding: 16px 0px;
-    font-size: calc(var(--default-btn-size) - 4px );
+    font-size: calc( var(--default-btn-size) - 4px );
     margin-top: 20px;
 }
 .wpcf7 form .wpcf7-response-output {
